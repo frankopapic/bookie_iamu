@@ -5,7 +5,7 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="tvTitle">Ime knjige</string>
     <string name="tvBookTitle">Kratka prica</string>
-    <string name="items">Items</string>
+    <string name="items">Books</string>
     <string name="about">About</string>
     <string name="about_description">This is an application made to make your reading life easier! Showing you the leatest and greatest books from around the world.</string>
 

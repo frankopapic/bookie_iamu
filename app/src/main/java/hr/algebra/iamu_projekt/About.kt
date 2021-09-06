@@ -23,8 +23,8 @@ class About : Fragment() {
             .setImage(hr.algebra.iamu_projekt.R.drawable.logo)
             .setDescription(getString(hr.algebra.iamu_projekt.R.string.about_description))
             .addEmail("frankopapic@gmail.com", "Email")
-            .addFacebook("facebook.com", "Facebook")
-            .addGitHub("github.com/frankopapic", "Github")
+            .addFacebook("https://www.facebook.com/algebra.hr", "Facebook")
+            .addGitHub("https://github.com/frankopapic", "Github")
             .create()
     }
 }

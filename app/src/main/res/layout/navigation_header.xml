@@ -5,5 +5,4 @@
     android:layout_height="@dimen/ivHeaderHeight"
     android:layout_marginTop="@dimen/ivHeaderMarginTop"
     android:layout_marginLeft="@dimen/ivHeaderMarginLeft">
-
 </ImageView>

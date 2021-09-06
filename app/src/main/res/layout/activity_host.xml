@@ -18,7 +18,7 @@
 
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/navigationView"
-        android:layout_width="160dp"
+        android:layout_width="@dimen/host_drawer_width"
         android:layout_height="match_parent"
         android:layout_gravity="start"
         app:itemTextColor="@drawable/navigation_text_color"

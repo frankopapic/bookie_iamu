@@ -4,6 +4,7 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
@@ -23,7 +24,7 @@ class BookPagerAdapter(private val items: MutableList<BookItem>, private val con
         private val tvRating : TextView = itemView.findViewById(R.id.tvRating)
         private val tvPages : TextView = itemView.findViewById(R.id.tvPages)
         private val tvPublished : TextView = itemView.findViewById(R.id.tvPublished)
-
+        private val btnDownload : Button = itemView.findViewById(R.id.button_so)
 
         fun bind(item: BookItem){
             Picasso.get()
@@ -37,6 +38,7 @@ class BookPagerAdapter(private val items: MutableList<BookItem>, private val con
             tvRating.text = "★ " + item.rating.toString() + "/5"
             tvPages.text = item.pages.toString() + " pages"
             tvPublished.text = item.published.toString() + "."
+            btnDownload.tag = item.download
         }
     }
 

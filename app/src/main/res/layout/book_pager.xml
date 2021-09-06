@@ -14,11 +14,11 @@
             android:id="@+id/ivBook"
             android:layout_width="match_parent"
             android:layout_height="@dimen/ivHeight"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="@dimen/iv_margin_top"
             tools:src="@drawable/spinner"/>
 
         <LinearLayout
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="@dimen/book_pager_ll_margin_top"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
@@ -29,7 +29,7 @@
                 android:layout_height="wrap_content"
                 android:textAlignment="center"
                 android:textStyle="bold"
-                android:textSize="30sp"
+                android:textSize="@dimen/book_pager_title_text_size"
                 android:textColor="@color/white"
                 android:fontFamily="@font/montserrat_bold"
                 tools:text="@string/tvTitle" />
@@ -61,8 +61,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:padding="25dp"
+            android:layout_marginTop="@dimen/book_pager_desc_ll_margin"
+            android:padding="@dimen/book_pager_desc_ll_padding"
             android:orientation="vertical"
             android:background="@drawable/background">
 
@@ -71,7 +71,7 @@
                 android:layout_height="wrap_content"
                 android:textColor="@color/black"
                 android:fontFamily="@font/montserrat_bold"
-                android:textSize="20sp"
+                android:textSize="@dimen/book_pager_desc_title_text_size"
                 android:text="Description"/>
 
             <TextView
@@ -86,41 +86,47 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginTopDescription"
                 android:textColor="@color/black"
                 android:fontFamily="@font/montserrat_bold"
-                android:textSize="20sp"
+                android:textSize="@dimen/book_pager_desc_pages_text_size"
                 android:text="Pages:"/>
 
             <TextView
                 android:id="@+id/tvPages"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginTopDescription"
                 android:textColor="@color/black"
                 android:fontFamily="@font/montserrat_regular"
-                android:textSize="15sp"
+                android:textSize="@dimen/book_pager_desc_page_numb"
                 android:text="2020"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginTopDescription"
                 android:textColor="@color/black"
                 android:fontFamily="@font/montserrat_bold"
-                android:textSize="20sp"
+                android:textSize="@dimen/book_pager_desc_published"
                 android:text="Published:"/>
 
             <TextView
                 android:id="@+id/tvPublished"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginTopDescription"
                 android:textColor="@color/black"
                 android:fontFamily="@font/montserrat_regular"
-                android:textSize="15sp"
+                android:textSize="@dimen/book_pager_desc_year"
                 android:text="1950"/>
 
             <Button
                 android:id="@+id/button_so"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginTopDescription"
+                android:textColor="@color/white"
                 android:autoLink="web"
                 android:clickable="true"
                 android:cursorVisible="true"
@@ -129,4 +135,5 @@
                 android:text="Download" />
         </LinearLayout>
     </LinearLayout>
+
 </ScrollView>

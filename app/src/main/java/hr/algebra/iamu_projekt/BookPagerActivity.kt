@@ -3,6 +3,7 @@ package hr.algebra.iamu_projekt
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import hr.algebra.iamu_projekt.ADAPTER.BookPagerAdapter
 import hr.algebra.iamu_projekt.FRAMEWORK.fetchItems
@@ -32,15 +33,14 @@ class BookPagerActivity : AppCompatActivity() {
         viewPager.currentItem = itemPosition
     }
 
-
     override fun onSupportNavigateUp(): Boolean {
         onBackPressed()
         return super.onSupportNavigateUp()
     }
 
-    fun openWebURL(inURL: String?) {
-        val browse = Intent(Intent.ACTION_VIEW, Uri.parse(inURL))
+    fun openWebURL(view: View) {
+        var uri = Uri.parse(view.tag.toString())
+        val browse = Intent(Intent.ACTION_VIEW, Uri.parse(uri.toString()))
         startActivity(browse)
     }
-
 }
