@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="5dp"
+    app:cardBackgroundColor="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="234dp"
+        android:padding="@dimen/bookItemMargin">
+
+        <ImageView
+            android:id="@+id/iv_book_image"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            tools:src="@drawable/cover"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:paddingTop="10dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tv_book_title"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                tools:text="Notes from the underground" />
+
+            <TextView
+                android:id="@+id/tv_book_author"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                tools:text="Fyodor Dostoevsky" />
+
+            <TextView
+                android:id="@+id/tv_book_rating"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:text="5/5" />
+
+            <TextView
+                android:id="@+id/tv_book_published"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:text="2020." />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
